@@ -1,0 +1,12 @@
+package org.api;
+
+import java.util.List;
+
+public class ApiS1 {
+	
+	private int compId;
+	private String CompanyName;
+	private long mobilenumber;
+	private List<> employees;
+
+}

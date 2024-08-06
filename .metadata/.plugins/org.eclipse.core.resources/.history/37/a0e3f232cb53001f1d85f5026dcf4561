@@ -1,0 +1,23 @@
+package driverlog;
+
+import java.util.Scanner;
+
+public class LogicEmployee {
+
+	//check whether its odd number or even number
+	public static void main(String[] args) {
+		
+		//For Realtime
+		// Create object for Scannrer Class
+		
+		int no= 361;
+		if(no%2==0) {
+			System.out.println("Even number="+no);
+			
+		}
+		
+		else {
+			System.out.println("odd number="+no);
+		}
+	}
+}

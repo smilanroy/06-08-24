@@ -1,0 +1,16 @@
+package org.api;
+
+public class DataAPI {
+	
+	public static void main(String[] args) {
+		
+		ApiS2 a=new ApiS2(10, "kane","HR");
+		ApiS2 a1=new ApiS2(11, "suresh","Manager" );
+		ApiS2 a2=new ApiS2(12,"ramesh","head");
+		ApiS2 a3=new ApiS2(13,"guru","developer");
+		ApiS2 a4=new ApiS2(14,"bala","designer");
+		
+				
+	}
+
+}

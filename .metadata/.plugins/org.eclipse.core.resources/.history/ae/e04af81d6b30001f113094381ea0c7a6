@@ -1,0 +1,37 @@
+package org.reqrstask;
+
+import java.io.FileReader;
+import java.io.IOException;
+
+import org.json.simple.JSONObject;
+import org.json.simple.parser.JSONParser;
+import org.json.simple.parser.ParseException;
+
+public class ReqresJsonTask {
+	
+	public static void main(String[] args) throws IOException, ParseException {
+		FileReader reader = new FileReader("C:\\Users\\Dell\\eclipse-workspace\\WebFramework\\src\\test\\resources\\regres.json");
+		JSONParser parser = new JSONParser();
+		Object parse = parser.parse(reader);
+		JSONObject obt=(JSONObject) parse;
+		String s = obt.get("page").toString();
+		String s1 = obt.get("per_page").toString();
+		String s2 = obt.get("total").toString();
+		String s3 = obt.get("total_pages").toString();
+		System.out.println(s);
+		System.out.println(s1);
+		System.out.println(s2);
+		System.out.println(s3);
+		
+		Object object = obt.get("support");
+		JSONObject ob=(JSONObject)object;
+		String st1 = ob.get("url").toString();
+		String st2 = ob.get("text").toString();
+		System.out.println(st1);
+		System.out.println(st2);
+		
+		
+		
+	}
+
+}

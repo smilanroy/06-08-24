@@ -1,0 +1,36 @@
+package org.loop;
+
+import java.util.Enumeration;
+import java.util.Iterator;
+import java.util.Vector;
+
+public class Jav1 {
+
+	public static void main(String[] args) {
+		
+		Vector<String> v=new Vector<>();
+		// adding value to vector
+		
+		v.add("a");
+		v.add("b");
+		v.add("c");
+		v.add("d");
+		
+		// to do iteration we use Emuneration
+		
+		Enumeration<String> elements =v.elements();
+		while (elements.hasMoreElements()) {
+			String string = (String) elements.nextElement();
+			System.out.println(string);
+		}
+		
+		System.out.println();
+		
+		Iterator<String> iterator=v.iterator();
+		while (iterator.hasNext()) {
+			String string = (String) iterator.next();
+			System.out.println(string);
+		}
+	}
+
+}

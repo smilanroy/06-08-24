@@ -1,0 +1,16 @@
+package org.loop;
+
+import java.util.Vector;
+
+public class Jav1 {
+
+	public static void main(String[] args) {
+		
+		Vector<String> v=new Vector<>();
+		// adding value to vector
+		
+		
+
+	}
+
+}
